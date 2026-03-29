@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-chat-bg: #343541;
+  --color-sidebar-bg: #202123;
+  --color-message-user: #343541;
+  --color-message-ai: #444654;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #565869;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #717284;
+}
+
+/* Markdown prose styles for AI responses */
+.prose pre {
+  background: #111827;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.prose code {
+  background: #111827;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.875em;
+}
+
+.prose pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.prose ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 1rem;
+}
+
+.prose ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin-bottom: 1rem;
+}
+
+.prose a {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #343541;
+  color: #f3f4f6;
+}
